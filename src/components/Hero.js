@@ -24,7 +24,7 @@ const Hero = () => {
         </Link>
       </article>
       <article className='img-container'>
-        <img src={heroBcg} alt='nice table' className='main-ing' />
+        <img src={heroBcg} alt='nice table' className='main-img' />
         <img src={heroBcg2} alt='person working' className='accent-img' />
       </article>
     </Wrapper>

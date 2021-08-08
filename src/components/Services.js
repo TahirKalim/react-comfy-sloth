@@ -60,6 +60,7 @@ const Wrapper = styled.section`
     background: var(--clr-primary-7);
     text-align: center;
     padding: 2.5rem 2rem;
+    margin: 2rem;
     border-radius: var(--radius);
     p {
       color: var(--clr-primary-2);
