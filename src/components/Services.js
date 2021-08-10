@@ -17,12 +17,12 @@ const Services = () => {
             placeat commodi cumque dolores consequatur.
           </p>
         </article>
-        <div className='service-center'>
+        <div className='services-center'>
           {services.map((service) => {
             const { id, icon, title, text } = service
             return (
               <article key={id} className='service'>
-                <span className='icon'>{icon}</span>
+                <span className='icon'>{icon} </span>
                 <h4>{title}</h4>
                 <p>{text}</p>
               </article>
@@ -40,9 +40,7 @@ const Wrapper = styled.section`
     color: var(--clr-primary-1);
   }
   padding: 5rem 0;
-
   background: var(--clr-primary-10);
-
   .header h3 {
     margin-bottom: 2rem;
   }
@@ -60,7 +58,6 @@ const Wrapper = styled.section`
     background: var(--clr-primary-7);
     text-align: center;
     padding: 2.5rem 2rem;
-    margin: 2rem;
     border-radius: var(--radius);
     p {
       color: var(--clr-primary-2);
