@@ -20,7 +20,7 @@ const SingleProductPage = () => {
   const {
     single_product_loading: loading,
     single_product_error: error,
-    single_peoduct: product,
+    single_product: product,
     fetchSingleProduct,
   } = useProductsContext()
 
@@ -42,7 +42,6 @@ const SingleProductPage = () => {
   if (error) {
     return <Error />
   }
-
   const {
     name,
     price,
@@ -66,18 +65,18 @@ const SingleProductPage = () => {
           <section className='content'>
             <h2>{name}</h2>
             <Stars />
-            <h5 className='price'>{formatPrice(price)}</h5>
-            <p className='desc'>{description} </p>
+            <h5 className='price'> {formatPrice(price)}</h5>
+            <p className='desc'> {description}</p>
             <p className='info'>
               <span>Available : </span>
               {stock > 0 ? 'In stock' : 'out of stock'}
             </p>
             <p className='info'>
-              <span>SKU : : </span>
+              <span>SKU : </span>
               {sku}
             </p>
             <p className='info'>
-              <span>Brand: </span>
+              <span>Brand : </span>
               {company}
             </p>
             <hr />

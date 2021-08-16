@@ -6,14 +6,13 @@ const PageHero = ({ title, product }) => {
     <Wrapper>
       <div className='section-center'>
         <h3>
-          <Link to='/'>Home</Link> /{' '}
-          {product && <Link to='/products'>/Products</Link>}/ {title}
+          <Link to='/'>Home</Link>
+          {product && <Link to='/products'>/ Products</Link>}/ {title}
         </h3>
       </div>
     </Wrapper>
   )
 }
-
 const Wrapper = styled.section`
   background: var(--clr-primary-10);
   width: 100%;
